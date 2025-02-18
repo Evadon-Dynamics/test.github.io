@@ -5,11 +5,11 @@ on:
   push:
     branches:
       - PPRD-deployment
-  pull_request:
-    types:
-      - closed
-    branches:
-      - PPRD-deployment
+  # pull_request:
+  #   types:
+  #     - closed
+  #   branches:
+  #     - PPRD-deployment
 jobs:
   build:
     if: ${{ github.repository == 'Evadon-Dynamics/test-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
