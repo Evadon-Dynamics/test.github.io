@@ -3,7 +3,7 @@ const version = 2 + 1;
 </script>
 
 <template>
-  <div class="hello">Hello PPRD Nuxt {{ version }}!</div>
+  <div class="hello">Hello PPRD Nuxt 2{{ version }}!</div>
 </template>
 
 <style scoped>
