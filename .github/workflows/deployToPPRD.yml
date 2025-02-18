@@ -12,7 +12,8 @@ on:
   #     - PPRD-deployment
 jobs:
   build:
-    if: ${{ github.repository == 'Evadon-Dynamics/test-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    # if: ${{ github.repository == 'Evadon-Dynamics/test-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
+    if: github.repository == 'Evadon-Dynamics/test-mirror'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
