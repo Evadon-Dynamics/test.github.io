@@ -1,3 +1,5 @@
+![Workflow Result for PPRD-deployment branch for deploy.yml workflow](https://github.com/Evadon-Dynamics/test.github.io/actions/workflows/deploy.yml/badge.svg?branch=PPRD-deployment)
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -73,3 +75,4 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
