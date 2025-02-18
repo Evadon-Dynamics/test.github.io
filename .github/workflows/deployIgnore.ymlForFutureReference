@@ -1,19 +1,18 @@
 # https://github.com/actions/deploy-pages#usage
-name: Deploy to PPRD GitHub Pages
+name: Deploy to PROD GitHub Pages
 on:
   workflow_dispatch:
   push:
     branches:
-      - PPRD-deployment
+      - main
   # pull_request:
   #   types:
   #     - closed
   #   branches:
-  #     - PPRD-deployment
+  #     - main
 jobs:
   build:
-    # if: ${{ github.repository == 'Evadon-Dynamics/test-mirror' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
-    if: github.repository == 'Evadon-Dynamics/test-mirror'
+    if: ${{ github.repository == 'Evadon-Dynamics/test.github.io' && (github.event_name == 'push' || github.event.pull_request.merged == true) }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
